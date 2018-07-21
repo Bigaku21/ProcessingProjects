@@ -1,0 +1,36 @@
+void setSliders()
+{
+  cp5 = new ControlP5(this);
+  cp5.addSlider("gravity")
+     .setLabel("Gravity")
+     .setPosition(100,50)
+     .setRange(-30,30)
+     .setWidth(100)
+     .setHeight(20)
+     .setValue(9.8)
+     ;
+  cp5.addSlider("mass")
+     .setLabel("Mass")
+     .setPosition(100,90)
+     .setRange(1,10)
+     .setValue(5)
+     .setWidth(100)
+     .setHeight(20)
+     ;
+  cp5.addSlider("k")
+     .setLabel("Elsticity")
+     .setPosition(100,130)
+     .setRange(0.01,6)
+     .setValue(0.1)
+     .setWidth(100)
+     .setHeight(20)
+     ;
+   cp5.addSlider("damping")
+     .setLabel("Damping")
+     .setPosition(100,170)
+     .setRange(0.1,0.99)
+     .setValue(0.8)
+     .setWidth(100)
+     .setHeight(20)
+     ;
+}
